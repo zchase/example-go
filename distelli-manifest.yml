@@ -19,7 +19,9 @@
     - sudo apt-get -y update
     - echo "Installing GoLang"
     - sudo apt-get -y install golang
-    - go build -o bin/server src/server.go
+    - cd src
+    - go build -o bin/server
+    - go test
     
   Exec:
     - exec ./bin/server $PORT
