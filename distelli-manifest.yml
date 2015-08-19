@@ -13,14 +13,16 @@
     - bin/server
     
   PreRelease:
-    - echo "Beginning PreRelease"
-    - echo "Installing build dependencies"
-    - echo "Updating apt-get"
+    - echo "–--Beginning PreRelease---"
+    - echo "--Installing build dependencies--"
+    - echo "-Updating apt-get-"
     - sudo apt-get -y update
-    - echo "Installing GoLang"
+    - echo "-Installing GoLang-"
     - sudo apt-get -y install golang
+    - echo “--Building--”
     - cd src
-    - go build -o bin/server
+    - go build -o ../bin/server
+    - echo “--Testing--”
     - go test
     
   Exec:
