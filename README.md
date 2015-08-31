@@ -55,7 +55,10 @@ Now change to the newly created directory.
 cd gobuilddeploy
 ```
 
-> Note: If your Github account is using **Two-factor authentication** you will not be able to use the above command to clone and work with the repository. You must: *Use an SSH key with github <a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank">https://help.github.com/articles/generating-ssh-keys/</a>* Use a different git clone syntax. See below:
+> Note: If your Github account is using **Two-factor authentication** you will not be able to use the above command to clone and work with the repository. 
+> You must: 
+> * Use an SSH key with github <a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank">https://help.github.com/articles/generating-ssh-keys/</a> 
+> * Use a different git clone syntax. See below:
 
 
 ```
