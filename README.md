@@ -300,12 +300,17 @@ For more information on the Distelli manifest see [Distelli Manifest](http://doc
 If you see the following build failure:
 
 ```
-Task Status: Exit=1 Signal=0\n\nCloning into '/distelli/tasks/d461-762'...\nHEAD is now at 7db094e Update distelli-manifest.yml\nExpected manifest(s) to contain app 'YourUserName/gobuilddeploy'. Instead the manifest(s) specified:\n\t'<username>/gobuilddeploy'\n
+Task Status: Exit=1 Signal=0
+
+Cloning into '/distelli/tasks/d461-762'...
+HEAD is now at 7db094e Update distelli-manifest.yml
+Expected manifest(s) to contain app 'YourUserName/gobuilddeploy'. Instead the manifest(s) specified:
+  '<username>/gobuilddeploy'
 ```
 
 Ensure that you:
-* Correctly edited the distelli-manifest.yml [Step 3](http://docs.distelli.com/docs/go-language-build-test-and-deploy#step-3-edit-the-distelli-manifest).
-* Committed and pushed the repository [Step 8](http://docs.distelli.com/docs/go-language-build-test-and-deploy#step-8-trigger-a-build).
+* Correctly edited the distelli-manifest.yml [Step 3](#step-3-edit-the-distelli-manifest).
+* Committed and pushed the repository [Step 8](#step-8-trigger-a-build).
 
 ### Deploy Failure
 
