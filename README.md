@@ -240,7 +240,7 @@ If you are using:
 * Github see [Push with Github](#section-push-with-github)
 * Bitbucket see [Push with Bitbucket](#section-push-with-bitbucket)
 
-## Push with Github
+## <a name="section-push-with-github"></a>Push with Github
 
 Enter the following commands in the `gobuilddeploy` directory:
 
@@ -254,7 +254,7 @@ This will push your code change up to the repository.
 
 Continue on to [Step 9. Watch the Build and Deploy Process](#step-9-watch-the-build-and-deploy-process).
 
-## Push with Bitbucket
+## <a name="section-push-with-bitbucket"></a>Push with Bitbucket
 
 Enter the following commands in the `gobuilddeploy` directory:
 
