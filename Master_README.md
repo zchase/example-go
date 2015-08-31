@@ -22,6 +22,11 @@ Install the agent and return to this document.
 
 ### Step 2. Fork and Clone the Repository
 
+
+If your repository of choice is:
+* Github, continue forward to [Fork Github Repository](#section-fork-github-repository).
+* Bitbucket, continue forward to [Fork a Bitbucket Repository](#section-fork-bitbucket-repository).
+
 ## <a name="section-fork-github-repository"></a>Fork Github Repository
 
 1. Ensure you are logged into your Github account. <a href="https://github.com/" target="_blank">https://github.com/</a>
@@ -61,6 +66,45 @@ cd gobuilddeploy
 ```
 git clone git@github.com:YOUR_GITHUB_USERNAME/gobuilddeploy.git
 ```
+
+To continue please proceed to [Step 3. Edit the Distelli Manifest](#step-3-edit-the-distelli-manifest).
+
+## <a name="section-fork-bitbucket-repository"></a>Fork Bitbucket Repository
+
+1. Ensure you are logged into your Bitbucket account. <a href="https://bitbucket.org/" target="_blank">https://bitbucket.org/</a>
+2. Go to this pubilc Distelli repository: <a href="https://bitbucket.org/distelli/gobuilddeploy" target="_blank">https://bitbucket.org/distelli/gobuilddeploy</a>.
+3. Click the 3 dots *actions* icon on the left.
+4. Click the **Fork** option from the drop-own.
+
+
+![alt text](https://www.filepicker.io/api/file/dbEHtFfQTcKmbriOqiio "bitbucket_fork_gobuilddeploy.png")
+
+
+You have forked the repository to your Bitbucket account. Good job!
+
+You can view the forked repository in your Bitbucket account at:
+
+```
+https://bitbucket.org/YOUR_BITBUCKET_USERNAME/gobuilddeploy
+```
+
+#### Clone Bitbucket Repository
+
+You will need to clone a copy of the repository to your local machine. This assumes you already have **mercurial** installed on your local computer. If not you can install mercurial from here: <a href="https://mercurial.selenic.com/" target="_blank">https://mercurial.selenic.com/</a>
+
+Use the following syntax to clone the repository:
+
+```
+hg clone https://YOUR_BITBUCKET_USERNAME@bitbucket.org/YOUR_BITBUCKET_REPO/gobuilddeploy
+```
+
+Now change to the newly created directory.
+
+```
+cd gobuilddeploy
+```
+
+
 
 ### <a name="step-3-edit-the-distelli-manifest"></a>Step 3. Edit the Distelli Manifest
 
@@ -194,6 +238,10 @@ Distelli will grab a copy of the repository; build it, test it, and if it is suc
 
 When a release is created this will trigger an auto deploy of the application to the -beta environment with the server from step 1.
 
+If you are using:
+* Github see [Push with Github](#section-push-with-github)
+* Bitbucket see [Push with Bitbucket](#section-push-with-bitbucket)
+
 ## <a name="section-push-with-github"></a>Push with Github
 
 Enter the following commands in the `gobuilddeploy` directory:
@@ -202,6 +250,19 @@ Enter the following commands in the `gobuilddeploy` directory:
 git add .
 git commit -m "Set username in manifest"
 git push -u origin master
+```
+
+This will push your code change up to the repository.
+
+Continue on to [Step 9. Watch the Build and Deploy Process](#step-9-watch-the-build-and-deploy-process).
+
+## <a name="section-push-with-bitbucket"></a>Push with Bitbucket
+
+Enter the following commands in the `gobuilddeploy` directory:
+
+```
+hg commit -m "Set username in manifest"
+hg push
 ```
 
 This will push your code change up to the repository.
