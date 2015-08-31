@@ -66,7 +66,7 @@ git clone git@github.com:YOUR_GITHUB_USERNAME/gobuilddeploy.git
 
 To continue please proceed to [Step 3. Edit the Distelli Manifest](#step-3-edit-the-distelli-manifest).
 
-## Fork Bitbucket Repository
+## <a name="section-fork-bitbucket-repository"></a>Fork Bitbucket Repository
 
 1. Ensure you are logged into your Bitbucket account. <a href="https://bitbucket.org/" target="_blank">https://bitbucket.org/</a>
 2. Go to this pubilc Distelli repository: <a href="https://bitbucket.org/distelli/gobuilddeploy" target="_blank">https://bitbucket.org/distelli/gobuilddeploy</a>.
