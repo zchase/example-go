@@ -161,7 +161,7 @@ To complete this section you will navigate to another set of instructions. There
 Certain fields will need tutorial specific information. The table below has that information.
 
 <table>
-  <tr><td>Name</td><td>Value></td></tr>
+  <tr><td>Name</td><td>Value</td></tr>
   <tr><td>Name your App<br>Application Name</td><td>gobuilddeploy</td></tr>
   <tr><td>Choose a Repo<br>Repository Name</td><td>gobuilddeploy</td></tr>
   <tr><td>Choose a Branch<br>Branch Name</td><td>master</td></tr>
@@ -226,7 +226,7 @@ You should see the server from step 1 in the server list.
 
 You have added a server to the environment.
 
-### Step 8. Trigger a Build
+### <a name="trigger-a-build"></a>Step 8. Trigger a Build
 
 In a previous step you edited and saved the distelli-manifest.yml file in the gobuilddeploy application directory. This constitutes a code change. You will now commit and push that code change up to your repository.
 
@@ -245,7 +245,9 @@ If you are using:
 Enter the following commands in the `gobuilddeploy` directory:
 
 ```
-git add .\ngit commit -m \"Set username in manifest\"\ngit push -u origin master
+git add .
+git commit -m "Set username in manifest"
+git push -u origin master
 ```
 
 This will push your code change up to the repository.
@@ -257,12 +259,13 @@ Continue on to [Step 9. Watch the Build and Deploy Process](#step-9-watch-the-bu
 Enter the following commands in the `gobuilddeploy` directory:
 
 ```
-hg commit -m \"Set username in manifest\"\nhg push
+hg commit -m "Set username in manifest"
+hg push
 ```
 
 This will push your code change up to the repository.
 
-### Step 9. Watch the Build and Deploy Process
+### <a name="step-9-watch-the-build-and-deploy-process"></a> Step 9. Watch the Build and Deploy Process
 
  1. Click the **Builds** link at the top of the Distelli WebUI.
 
@@ -290,7 +293,7 @@ The distelli-manifest.yml provides the instructions for building, testing, and d
         
 For more information on the Distelli manifest see [Distelli Manifest](http://docs.distelli.com/docs/distelli-manifest).
 
-### Troubleshooting
+### <a name="troubleshooting"></a> Troubleshooting
 
 ### Incorrect Manifest
 
