@@ -74,7 +74,7 @@ To continue please proceed to [Step 3. Edit the Distelli Manifest](#step-3-edit-
 3. Click the 3 dots *actions* icon on the left.
 4. Click the **Fork** option from the drop-own.
 
-![alt text](https://www.filepicker.io/api/file/dbEHtFfQTcKmbriOqiio/bitbucket_fork_gobuilddeploy.png)
+![alt text]("https://www.filepicker.io/api/file/dbEHtFfQTcKmbriOqiio","bitbucket_fork_gobuilddeploy.png")
 
 You have forked the repository to your Bitbucket account. Good job!
 
@@ -263,7 +263,7 @@ http://YOUR_SERVER_IP:8002
 
 The distelli-manifest.yml provides the instructions for building, testing, and deploying the application.
 
-![alt text](https://www.filepicker.io/api/file/z6rJqATlSwuKHTTtkRgA/go-manifest-analysis.png)
+![alt text]("https://www.filepicker.io/api/file/z6rJqATlSwuKHTTtkRgA","go-manifest-analysis.png")
         
 For more information on the Distelli manifest see [Distelli Manifest](http://docs.distelli.com/docs/distelli-manifest).
 
