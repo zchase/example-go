@@ -23,7 +23,7 @@ Install the agent and return to this document.
 
 If your repository of choice is:
 * Github, continue forward to [Fork Github Repository](#section-fork-github-repository).
-* Bitbucket, continue forward to [For a Bitbucket Repository](#section-fork-bitbucket-repository).
+* Bitbucket, continue forward to [Fork a Bitbucket Repository](#section-fork-bitbucket-repository).
 
 ## <a name="section-fork-github-repository"></a>Fork Github Repository
 
@@ -55,9 +55,7 @@ Now change to the newly created directory.
 cd gobuilddeploy
 ```
 
-
-> Note: If your Github account is using **Two-factor authentication** you will not be able to use the above command to clone and work with the repository. You must:\n* Use an SSH key with github <a href=\"https://help.github.com/articles/generating-ssh-keys/\" target=\"_blank\">https://help.github.com/articles/generating-ssh-keys/</a>\n* Use a different git clone syntax. See below:
-
+> Note: If your Github account is using **Two-factor authentication** you will not be able to use the above command to clone and work with the repository. You must: *Use an SSH key with github <a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank">https://help.github.com/articles/generating-ssh-keys/</a>* Use a different git clone syntax. See below:
 
 
 ```
@@ -101,7 +99,7 @@ cd gobuilddeploy
 
 
 
-### Step 3. Edit the Distelli Manifest
+### <a name="step-3-edit-the-distelli-manifest></a>Step 3. Edit the Distelli Manifest
 
 The Distelli Manifest file provides the Distelli Platform with the needed information to successfully build and deploy your application. This file must exist before building your application with Distelli.
 
