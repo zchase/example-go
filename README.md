@@ -25,7 +25,7 @@ If your repository of choice is:
 * Github, continue forward to [Fork Github Repository](#section-fork-github-repository).
 * Bitbucket, continue forward to [For a Bitbucket Repository](#section-fork-bitbucket-repository).
 
-## Fork Github Repository
+## <a name="section-fork-github-repository"></a>Fork Github Repository
 
 1. Ensure you are logged into your Github account. <a href="https://github.com/" target="_blank">https://github.com/</a>
 2. Go to this pubilc Distelli repository: <a href="https://github.com/distelli/gobuilddeploy" target="_blank">https://github.com/distelli/gobuilddeploy</a>.
