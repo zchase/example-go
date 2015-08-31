@@ -99,7 +99,7 @@ cd gobuilddeploy
 
 
 
-### <a name="step-3-edit-the-distelli-manifest></a>Step 3. Edit the Distelli Manifest
+### <a name="step-3-edit-the-distelli-manifest"></a>Step 3. Edit the Distelli Manifest
 
 The Distelli Manifest file provides the Distelli Platform with the needed information to successfully build and deploy your application. This file must exist before building your application with Distelli.
 
