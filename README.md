@@ -22,7 +22,7 @@ Install the agent and return to this document.
 
 ### Step 2. Fork and Clone the Repository
 
-## <a name="section-fork-github-repository"></a>Fork Github Repository
+#### <a name="section-fork-github-repository"></a>Fork Github Repository
 
 1. Ensure you are logged into your Github account. <a href="https://github.com/" target="_blank">https://github.com/</a>
 2. Go to this pubilc Distelli repository: <a href="https://github.com/distelli/gobuilddeploy" target="_blank">https://github.com/distelli/gobuilddeploy</a>.
@@ -70,9 +70,9 @@ The sample application you cloned will already have an existing `distelli-manife
 
 Edit the `distelli-manifest.yml` file. 
 
-On the first line you will see a <username> placeholder, and then the name of the sample application.
+On the first line you will see a &lt;username&gt; placeholder, and then the name of the sample application.
 
-Replace the <username> placeholder with your Distelli username.  To find your Distelli username see [Finding Your Distelli Username](http://docs.distelli.com/docs/finding-your-distelli-username).
+Replace the &lt;username&gt; placeholder with your Distelli username.  To find your Distelli username see [Finding Your Distelli Username](http://docs.distelli.com/docs/finding-your-distelli-username).
 
 For example if your username is 'YourUserName' your `distelli-manifest.yml` should look like this:
 
@@ -194,7 +194,7 @@ Distelli will grab a copy of the repository; build it, test it, and if it is suc
 
 When a release is created this will trigger an auto deploy of the application to the -beta environment with the server from step 1.
 
-## <a name="section-push-with-github"></a>Push with Github
+#### <a name="section-push-with-github"></a>Push with Github
 
 Enter the following commands in the `gobuilddeploy` directory:
 
