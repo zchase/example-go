@@ -74,7 +74,9 @@ To continue please proceed to [Step 3. Edit the Distelli Manifest](#step-3-edit-
 3. Click the 3 dots *actions* icon on the left.
 4. Click the **Fork** option from the drop-own.
 
+
 ![alt text](https://www.filepicker.io/api/file/dbEHtFfQTcKmbriOqiio "bitbucket_fork_gobuilddeploy.png")
+
 
 You have forked the repository to your Bitbucket account. Good job!
 
@@ -117,7 +119,35 @@ Replace the <username> placeholder with your Distelli username.  To find your Di
 For example if your username is 'YourUserName' your `distelli-manifest.yml` should look like this:
 
 ```
-YourUserName/gobuilddeploy\n  # Distelli Manifest example\n  # this example assumes the build and deploy servers are:\n  # The same architecture (32 vs 64 bit)\n  # Ubuntu 14.04 \n  # Installed Packages: apt-get\n  #\n  \n  PreRelease:\n    - echo \"–--Beginning PreRelease---\"\n    - echo \"--Installing build dependencies--\"\n    - echo \"-Updating apt-get-\"\n    - sudo apt-get -y update\n    - echo \"-Installing GoLang-\"\n    - sudo apt-get -y install golang\n    - echo “--Building--”\n    - cd src\n    - go build -o ../bin/server\n    - echo “--Testing--”\n    - go test\n    \n  PkgInclude:\n    - bin/server\n    \n  Env:\n    - PORT: \"8002\"\n\n  Exec:\n    - exec ./bin/server $PORT
+YourUserName/gobuilddeploy
+  # Distelli Manifest example
+  # this example assumes the build and deploy servers are:
+  # The same architecture (32 vs 64 bit)
+  # Ubuntu 14.04 
+  # Installed Packages: apt-get
+  #
+  
+  PreRelease:
+    - echo "–--Beginning PreRelease---"
+    - echo "--Installing build dependencies--"
+    - echo "-Updating apt-get-"
+    - sudo apt-get -y update
+    - echo "-Installing GoLang-"
+    - sudo apt-get -y install golang
+    - echo “--Building--”
+    - cd src
+    - go build -o ../bin/server
+    - echo “--Testing--”
+    - go test
+    
+  PkgInclude:
+    - bin/server
+    
+  Env:
+    - PORT: "8002"
+    
+  Exec:
+    - exec ./bin/server $PORT
 ```
 
 **Save your change.**
@@ -129,22 +159,13 @@ In this step you will use the Distelli *new application workflow* to create an a
 To complete this section you will navigate to another set of instructions. There you will walk through those instructions, afterwards returning here.
 
 Certain fields will need tutorial specific information. The table below has that information.
-[block:parameters]
-{
-  "data": {
-    "h-0": "Name",
-    "h-1": "Value",
-    "0-0": "Name your App\nApplication Name",
-    "0-1": "gobuilddeploy",
-    "1-0": "Choose a Repo\nRepository Name",
-    "2-0": "Choose a Branch\nBranch Name",
-    "1-1": "gobuilddeploy",
-    "2-1": "master"
-  },
-  "cols": 2,
-  "rows": 3
-}
-[/block]
+
+<table>
+  <tr><td>Name</td><td>Value></td></tr>
+  <tr><td>Name your App<br>Application Name</td><td>gobuilddeploy</td></tr>
+  <tr><td>Choose a Repo<br>Repository Name</td><td>gobuilddeploy</td></tr>
+  <tr><td>Choose a Branch<br>Branch Name</td><td>master</td></tr>
+</table>
 
 > After completing the **Tutorial Creating an Application from a Repository** return to this tutorial document.
 
@@ -263,7 +284,9 @@ http://YOUR_SERVER_IP:8002
 
 The distelli-manifest.yml provides the instructions for building, testing, and deploying the application.
 
+
 ![alt text](https://www.filepicker.io/api/file/z6rJqATlSwuKHTTtkRgA "go-manifest-analysis.png")
+      
         
 For more information on the Distelli manifest see [Distelli Manifest](http://docs.distelli.com/docs/distelli-manifest).
 
