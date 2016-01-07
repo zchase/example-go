@@ -23,7 +23,7 @@
     - bin/server
     
   Env:
-    - PORT: "8002"
+    - PORT: "8002"   
 
   Exec:
     - exec ./bin/server $PORT
