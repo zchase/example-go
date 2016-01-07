@@ -20,7 +20,7 @@ You must install the Distelli agent on the server to facilitate deployments. Ins
 
 Install the agent and return to this document.
 
-### Step 2. Fork and Clone the Repository
+### Step 2. Fork and Clone the Repository   
 
 #### <a name="section-fork-github-repository"></a>Fork Github Repository
 
